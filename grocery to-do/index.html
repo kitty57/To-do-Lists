@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Shopping To-Do List</title>
+    <link rel="stylesheet" href = "styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grocery Shopping To-Do List</h1>
+        <div class="input-group">
+            <select id="fruits" onchange="addItem()">
+                <option value="">Select Fruit</option>
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Orange">Orange</option>
+            </select>
+            <select id="vegetables" onchange="addItem()">
+                <option value="">Select Vegetable</option>
+                <option value="Carrot">Carrot</option>
+                <option value="Broccoli">Broccoli</option>
+                <option value="Spinach">Spinach</option>
+            </select>
+            <select id="necessities" onchange="addItem()">
+                <option value="">Select Necessity</option>
+                <option value="Milk">Milk</option>
+                <option value="Bread">Bread</option>
+                <option value="Eggs">Eggs</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <input type="text" id="customItem" placeholder="Enter custom item">
+        </div>
+        <button id="addButton" class="addButton" onclick ="addItem()">Add</button>
+        <ul id="todoList" class="todo-list"></ul>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
