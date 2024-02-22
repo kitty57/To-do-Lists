@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Medicine List App</title>
+</head>
+<body>
+    <div class="app-container">
+        <h1>Medicine List</h1>
+        <div>
+            <select id="medicineDropdown" onchange="addMedicine()">
+                <option value="" disabled selected>Select Item</option>
+                <option value="Antihistamine">Antihistamine</option>
+                <option value="Acetaminophen and an nsaid">Acetaminophen and an NSAID</option>
+                <option value="Antacids">Antacids</option>
+                <option value="Hydrocortisone">Hydrocortisone</option>
+                <option value="Antibiotic Ointment">Antibiotic Ointment</option>
+                <option value="Bandages">Bandages</option>
+                <option value="Cough medicine">Cough medicine</option>
+                <option value="Loperamide">Loperamide</option>
+                <option value="Aspirin">Aspirin</option>
+                <option value="Paracetamol">Paracetamol</option>
+                <option value="Bandaids">Bandaids</option>
+            </select>
+            <span class="plus-btn" onclick="addCustomItem()">+</span>
+        </div>
+        <div id="selectedItemsBox" class="selected-items-box"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

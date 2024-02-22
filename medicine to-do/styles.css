@@ -1,0 +1,47 @@
+/* Your CSS styles here */
+.medicine-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.delete-btn,
+.plus-btn {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: #999; /* Adjust the color as needed */
+}
+
+.selected-items-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.selected-item {
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.checklist {
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.delete-btn {
+    margin-left: auto;
+}
